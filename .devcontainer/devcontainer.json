@@ -13,7 +13,7 @@
 
 	// The optional 'workspaceFolder' property is the path VS Code should open by default when
 	// connected. This is typically a file mount in .devcontainer/docker-compose.yml
-	"workspaceFolder": "/var/www/html"
+	"workspaceFolder": "/var/www/html",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -31,8 +31,30 @@
 	// "postCreateCommand": "cat /etc/os-release",
 
 	// Configure tool-specific properties.
-	// "customizations": {},
-
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"bmewburn.vscode-intelephense-client",
+				"rifi2k.format-html-in-php",
+				"donjayamanne.githistory",
+				"eamodio.gitlens",
+				"ryannaddy.laravel-artisan",
+				"shufo.vscode-blade-formatter",
+				"onecentlin.laravel-blade",
+				"amiralizadeh9480.laravel-extra-intellisense",
+				"mrchetan.goto-laravel-components",
+				"ctf0.laravel-goto-env",
+				"codingyu.laravel-goto-view",
+				"mohamedbenhida.laravel-intellisense",
+				"ritwickdey.liveserver",
+				"xdebug.php-debug",
+				"mikestead.dotenv",
+				"file-icons.file-icons",
+				"onecentlin.laravel5-snippets",
+				"vscode-icons-team.vscode-icons"
+			]
+		}
+	}
 	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "devcontainer"
 }
