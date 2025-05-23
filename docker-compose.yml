@@ -6,8 +6,6 @@ services:
     volumes:
       - ./src:/var/www/html
     working_dir: /var/www/html
-    depends_on:
-      - mysql
     ports:
       - "8000:8000"
 
